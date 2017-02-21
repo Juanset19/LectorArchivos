@@ -6,7 +6,6 @@ package udem.pds.taller1.io;
 import java.io.IOException;
 import java.util.List;
 
-import udem.pds.taller1.io.base.Lector;
 import udem.pds.taller1.io.base.LecturaException;
 
 /**
