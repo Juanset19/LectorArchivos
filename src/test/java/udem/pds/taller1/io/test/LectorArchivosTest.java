@@ -17,7 +17,7 @@ import udem.pds.taller1.io.base.LecturaException;
 
 public class LectorArchivosTest {
 
-	private static final String TEST_FILE_PATH = "D:\\test\\UdeM\\udem_test_lector_archivos.txt";
+	private static final String TEST_FILE_PATH = "C:\\test\\UdeM\\udem_test_lector_archivos.txt";
 
 	@Test
 	public void testLectorSimple() {
@@ -32,9 +32,7 @@ public class LectorArchivosTest {
 		LectorArchivoFiltro lectorArchivoFiltro = new LectorArchivoFiltro(TEST_FILE_PATH);
 		LectorArchivo lectorArchivo = new LectorArchivo(TEST_FILE_PATH);
 		FiltroMayusculaMinuscula filtroMayusculaMinuscula = new FiltroMayusculaMinuscula();
-		ArrayList<Lector> lectoresBase = new ArrayList<Lector>();
-		lectoresBase.add(lectorArchivo);
-		lectorArchivoFiltro.setLectoresBase(lectoresBase);
+		lectorArchivoFiltro.setLectorBase(lectorArchivo);
 		ArrayList<IFiltro> filtros = new ArrayList<IFiltro>();
 		filtros.add(filtroMayusculaMinuscula);
 		lectorArchivoFiltro.setFiltros(filtros);
@@ -47,9 +45,7 @@ public class LectorArchivosTest {
 		LectorArchivoFiltro lectorArchivoFiltro = new LectorArchivoFiltro(TEST_FILE_PATH);
 		LectorArchivo lectorArchivo = new LectorArchivo(TEST_FILE_PATH);
 		FiltroEspacioGuionBajo filtroEspacioGuionBajo = new FiltroEspacioGuionBajo();
-		ArrayList<Lector> lectoresBase = new ArrayList<Lector>();
-		lectoresBase.add(lectorArchivo);
-		lectorArchivoFiltro.setLectoresBase(lectoresBase);
+		lectorArchivoFiltro.setLectorBase(lectorArchivo);
 		ArrayList<IFiltro> filtros = new ArrayList<IFiltro>();
 		filtros.add(filtroEspacioGuionBajo);
 		lectorArchivoFiltro.setFiltros(filtros);
@@ -63,9 +59,7 @@ public class LectorArchivosTest {
 		LectorArchivo lectorArchivo = new LectorArchivo(TEST_FILE_PATH);
 		FiltroMayusculaMinuscula filtroMayusculaMinuscula = new FiltroMayusculaMinuscula();
 		FiltroEspacioGuionBajo filtroEspacioGuionBajo = new FiltroEspacioGuionBajo();
-		ArrayList<Lector> lectoresBase = new ArrayList<Lector>();
-		lectoresBase.add(lectorArchivo);
-		lectorArchivoFiltro.setLectoresBase(lectoresBase);
+		lectorArchivoFiltro.setLectorBase(lectorArchivo);
 		ArrayList<IFiltro> filtros = new ArrayList<IFiltro>();
 		filtros.add(filtroEspacioGuionBajo);
 		lectorArchivoFiltro.setFiltros(filtros);

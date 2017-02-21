@@ -47,10 +47,8 @@ public class LectorArchivoFiltro extends LectorComplejo {
 	@Override
 	public int leer() throws LecturaException {
 		int caracter = 0;
-		for (Lector lectorBase : lectoresBase) {
-			caracter = lectorBase.leer();
-			caracter = aplicarFiltros(caracter);
-		}
+		caracter = lectorBase.leer();
+		caracter = aplicarFiltros(caracter);
 		return caracter;
 	}
 

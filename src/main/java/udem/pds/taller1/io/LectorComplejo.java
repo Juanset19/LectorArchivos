@@ -5,7 +5,6 @@ package udem.pds.taller1.io;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.List;
 
 import udem.pds.taller1.io.base.Lector;
 import udem.pds.taller1.io.base.LecturaException;
@@ -16,7 +15,7 @@ import udem.pds.taller1.io.base.LecturaException;
 public abstract class LectorComplejo implements Lector {
 
 	protected FileInputStream stream;
-	protected List<Lector> lectoresBase;
+	protected Lector lectorBase;
 
 	/**
 	 * Constructor de un lector complejo
@@ -48,18 +47,18 @@ public abstract class LectorComplejo implements Lector {
 	public abstract int leer() throws LecturaException;
 
 	/**
-	 * @return the lectoresBase
+	 * @return the lectorBase
 	 */
-	public List<Lector> getLectoresBase() {
-		return lectoresBase;
+	public Lector getLectorBase() {
+		return lectorBase;
 	}
 
 	/**
-	 * @param lectoresBase
-	 *            the lectoresBase to set
+	 * @param lectorBase
+	 *            the lectorBase to set
 	 */
-	public void setLectoresBase(List<Lector> lectoresBase) {
-		this.lectoresBase = lectoresBase;
+	public void setLectorBase(Lector lectorBase) {
+		this.lectorBase = lectorBase;
 	}
 
 }
