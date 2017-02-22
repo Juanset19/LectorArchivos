@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry excluding="**" kind="src" path="src/main/resources"/>
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/Juan Sebastian/Google Drive/Especialización/Patrones de diseño de Software/Taller 1 - Lector de archivos/lector-archivos-base.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="D:/Documentos/Especialización/Patrones de diseño de Software/lector-archivos-base.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
